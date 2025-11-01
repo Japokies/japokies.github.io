@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +32,7 @@
         .logo {
             font-size: 3.5em;
             margin-bottom: 20px;
-            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
         }
 
         .subtitle {
@@ -63,7 +64,7 @@
         .project-card:hover {
             transform: translateY(-10px);
             background: rgba(255, 255, 255, 0.2);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
         }
 
         .project-icon {
@@ -96,44 +97,60 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .project-card {
             animation: fadeIn 0.6s ease-out;
         }
 
-        .project-card:nth-child(1) { animation-delay: 0.1s; }
-        .project-card:nth-child(2) { animation-delay: 0.2s; }
-        .project-card:nth-child(3) { animation-delay: 0.3s; }
+        .project-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .project-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .project-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="logo">♛ Japokies</div>
         <div class="subtitle">Chào mừng đến với thế giới sáng tạo của tôi!</div>
-        
+
         <div class="projects-grid">
             <a href="/chess-tournament" class="project-card">
                 <div class="project-icon">♟️</div>
                 <div class="project-title">CLB Cờ Vua</div>
                 <div class="project-desc">Trang web quản lý giải đấu cờ vua với phân tích chuyên sâu</div>
             </a>
-            
-            <a href="/encrypt-tools" class="project-card coming-soon">
+
+            <a href="#" class="project-card coming-soon">
                 <div class="project-icon">🔐</div>
                 <div class="project-title">Encrypt Tools</div>
                 <div class="project-desc">Công cụ mã hóa và bảo mật (Đang phát triển)</div>
             </a>
-            
+
             <a href="#" class="project-card coming-soon">
                 <div class="project-icon">🎵</div>
                 <div class="project-title">Music Portfolio</div>
                 <div class="project-desc">Bộ sưu tập âm nhạc và sáng tác (Đang phát triển)</div>
             </a>
         </div>
-        
+
         <footer>
             Facebook: <strong>https://www.facebook.com/profile.php?id=61571840440544</strong>
         </footer>
@@ -142,4 +159,5 @@
         </footer>
     </div>
 </body>
+
 </html>
